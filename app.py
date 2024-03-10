@@ -4,7 +4,7 @@ import pytesseract
 import face_recognition
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 
 UPLOAD_FOLDER = 'uploads/'
 if not os.path.exists(UPLOAD_FOLDER):
